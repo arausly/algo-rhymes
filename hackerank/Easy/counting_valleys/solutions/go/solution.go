@@ -1,12 +1,8 @@
-package main
+package countingvalleys
 
 import (
 	"strings"
 )
-
-func main() {
-	countingValleys(8, "UDDDUDUU")
-}
 
 func countingValleys(n int, paths string) int {
 	valleyCount, depthTracker, seaLevel := 0, 0, 0

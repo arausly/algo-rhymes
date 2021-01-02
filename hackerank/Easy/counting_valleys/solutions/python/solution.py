@@ -15,3 +15,7 @@ def counting_valleys(n, path):
             depth_tracker = 0
 
     return valley_count
+
+
+if __name__ == "__main__":
+    pass
