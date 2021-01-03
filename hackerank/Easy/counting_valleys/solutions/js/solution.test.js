@@ -1,4 +1,4 @@
-const countingValleys = require("../solutions/solution");
+const countingValleys = require("./solution");
 
 test("returns 2 valleys for the path entries", () => {
   expect(countingValleys(12, "DDUUDDUDUUUD")).toBe(2);

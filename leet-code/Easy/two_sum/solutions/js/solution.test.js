@@ -1,4 +1,4 @@
-const twoSum = require("../solutions/solution");
+const twoSum = require("./solution");
 
 test("should return 0 and 1 for numbers provided", () => {
   const numbers = [2, 7, 11, 15];
