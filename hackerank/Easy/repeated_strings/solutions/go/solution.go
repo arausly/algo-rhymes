@@ -18,15 +18,12 @@ func repeatedString(s string, n int64) int64 {
 	var f int64
 	l := int64(len(s))
 
-	if !strings.Contains(s, "a") {
+	switch {
+	case !strings.Contains(s, "a"):
 		return 0
-	}
-
-	if l == 1 {
+	case l == 1:
 		return n
-	}
-
-	if l < n {
+	case l < n:
 		g := math.Floor(float64(n / l))
 		m := n % l
 		countA(s, &f)
@@ -35,12 +32,11 @@ func repeatedString(s string, n int64) int64 {
 		if m > 0 {
 			countA(s[:m], &f)
 		}
-
-	} else {
+		return f
+	default:
 		countA(s[:n], &f)
+		return f
 	}
-
-	return f
 }
 
 //⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠ WARNING!! ⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠

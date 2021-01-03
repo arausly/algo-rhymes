@@ -10,15 +10,15 @@ The first approach had a quadratic (O(n^2)) time complexity. I decided that as l
 see code snippet below: 
 
 ```
-    r := s
-    sArr = strings.Split(s, "")
-	for s < n {
-       for _, val := range sArr {
+   r := s
+   sArr = strings.Split(s, "")
+   for s < n {
+         for _, val := range sArr {
 		     if len(s) == n  {
 				 break
 			 }
 			 r += val
-	   }
+	     }
 	}
 ```
 
@@ -34,7 +34,7 @@ see below code snippet:
 				d = int64(len(s))
 			}
 			r += s[:d]
-		}
+	 }
 ```
 
 This also is a valid solution but doesn't pass the time-limit set in some test cases. In this approach, I get the difference per iteration and append a slice of the base string with reference to the difference.
@@ -43,17 +43,17 @@ NOTE: a quick note here, for the two approaches above I focused on generating th
 
 
 
-My final and the optimal solution passing all possible test cases and totally disregards the approach of trying to generate the repeated string first. Instead, it counts the occurrences in the first string, then it multiplies it by the possible number of times the base string "s" will be repeated given n. And then adds any excess remainder if available.
+My final and the optimal solution totally disregards the approach of trying to generate the repeated string first. Instead, it counts the occurrences in the first string, then it multiplies it by the possible number of times the base string "s" will be repeated given n. And then adds any excess remainder if available.
 
 see main code snippets below:
 
 ```
-	    g := math.Floor(float64(n / l))
-		m := n % l
+	  g := math.Floor(float64(n / l))
+	  m := n % l
            ...
            ...
            ...
-        f *= int64(g)
+      f *= int64(g)
 
 // where m is the remainder
 //       g is the number of times the length of the base string goes into the target "n"
