@@ -1,6 +1,6 @@
 {
     "name": "donkovah/algorithms",
-    "description": "Hackerrank & Litecode Questions Solutions And Test Cases",
+    "description": "Hackerrank & Leetcode Questions Solutions And Test Cases",
     "type": "project",
     "require-dev": {
         "phpunit/phpunit": "^9.5"
