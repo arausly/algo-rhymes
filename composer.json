@@ -1,0 +1,18 @@
+{
+    "name": "donkovah/algorithms",
+    "description": "Hackerrank & Litecode Questions Solutions And Test Cases",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oluwasegun Kesington",
+            "email": "iamkesington@gmail.com"
+        }
+    ],
+    "require": {
+        "PHP": "^7.3"
+    }
+}
