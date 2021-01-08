@@ -31,9 +31,7 @@ Contributions are very welcome. Read the [contributing guide](https://github.com
 ## Contributors
 
 <ul>
-
-[Arausi](https://github.com/arausly)
-[Kesington](https://github.com/donkovah)
-[Alli](https://github.com/EseAlli)
-
+<li> <a href="https://github.com/arausly">Arausi</a></li>
+<li> <a href="https://github.com/donkovah">Kesington</a></li>
+<li> <a href="https://github.com/EseAlli">Alli</a></li>
 </ul>
